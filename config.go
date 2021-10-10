@@ -36,7 +36,7 @@ func setup() {
 	config = &configOptions{}
 
 	config.APIKey = osHelper(environmentAPIKey, "")
-	config.SendMethod = strings.ToUpper(osHelper(environmentSendMethod, http.MethodGet))
+	config.SendMethod = strings.ToUpper(osHelper(environmentSendMethod, http.MethodPost))
 }
 
 func init() {
